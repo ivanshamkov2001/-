@@ -1,0 +1,6 @@
+\babel@toc {russian}{}
+\contentsline {section}{\numberline {1}Постановка задачи}{3}{section.1}%
+\contentsline {section}{\numberline {2}Исследование одношаговой системы}{4}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Нахождение неподвижных точек}{4}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Исследование устойчивости неподвижных точек}{4}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Исследование существования циклов длинной 2 и 3}{5}{subsection.2.3}%

@@ -1,0 +1,98 @@
+\documentclass[11pt]{article}
+\pdfoutput=1
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english, russian]{babel}
+\usepackage{NotesTeX_rus}
+\usepackage{a4wide}
+% Математика
+\usepackage{amsmath,amsfonts,amssymb,amsthm,mathtools} 
+\usepackage{wasysym}
+\usepackage{indentfirst}
+\usepackage{a4wide} 
+\usepackage[T2A]{fontenc}			% кодировка
+\definecolor{block-gray}{gray}{0.90} % уровень прозрачности (1 - максимум)
+\newtcolorbox{myquote}{colback=red!5!white,grow to right by=0mm,grow to left by=0mm, boxrule=0pt,boxsep=0pt,breakable} % 1настройки области с изменённым фоном
+%Заголовок
+%\usepackage{graphix}
+%зададим полезные команды:
+%скалярное произведение
+\newcommand{\scalar}[2]{\left \langle #1,#2\right \rangle}
+%выпуклая оболочка
+\newcommand{\diag}{\textrm{diag}}
+\newcommand{\comp}{\textrm{comp}}
+\newcommand{\conv }[0]{\textrm{conv}}
+\newcommand{\sgn}[1]{\textrm{sgn}\left(#1\right)}
+\newcommand{\Si}[1]{\textrm{Si}\left(#1\right)}
+
+\begin{document}
+\thispagestyle{empty}
+
+\begin{center}
+\ \vspace{-3cm}
+
+\includegraphics[width=0.5\textwidth]{msu.eps}\\
+{\scshape Московский государственный университет имени М.~В.~Ломоносова}\\
+Факультет вычислительной математики и кибернетики\\
+Кафедра системного анализа
+
+\vfill
+
+{\LARGE Курсовая работа}
+
+\vspace{1cm}
+
+{\LARGE\bfseries <<Динамические системы и модели биологии>>} \\
+\vspace{1cm}
+{\Large\bfseries <<Часть 2: Исследование нелинейных  \\
+динамических систем на плоскости>>}
+\end{center}
+
+\vspace{1cm}
+
+\begin{flushright}
+  \large
+  \textit{Студент 315 группы}\\
+  И.\,В.~Шамков
+
+  \vspace{5mm}
+
+  \textit{Преподаватель}\\
+  к.ф.-м.н., доцент И.\,В.~Востриков
+\end{flushright}
+
+\vfill
+
+\begin{center}
+Москва, 2022
+\end{center}
+
+\newpage
+\tableofcontents
+\newpage
+\section{Постановка задачи}
+Задана динамическая система
+\begin{equation*}
+\begin{cases}
+\frac{du}{dt} = r_1u (A_u - u) - k_1uh, \\
+\frac{dv}{dt} = r_2v (A_v - v) - k_2uh, \\
+\frac{dh}{dt} = - \gamma h + R, \\
+v(0) = 10, h(0) = 0, u(0) = 10^3
+\end{cases}
+(u,v,h) \in \mathbb{R}^3_+
+\end{equation*}
+$ r_1 = 0.012,r_2 = 0.006, A_u = 10^{12}, A_v = 10^{10}, k_2 = 10^{-6} 
+  k_1 = 4.25 k_2,$ \\ $ \gamma = 0.0001 = 10^{-3}.$
+Найти значение параметра $R$, при котором $v(t) >= 10^{5}$. \\
+Необходимо:
+\begin{enumerate}
+    \item Дать биологическую интерпретацию характеристик системы.
+    \item Ввести новые безразмерные переменные, максимально уменьшив число входящих параметров. Выбрать два свободных параметра. Если число параметров больше двух, то считать остальные параметры фиксированными.
+    \item Найти неподвижные точки системы и исследовать их характер в зависимости от значений параметров. Результаты исследования представить в виде параметрического портрета системы.
+    \item Для каждой характерной области параметрического портрета построить фазовый портрет. Дать характеристику поведения системы в каждом из этих случаев.
+    \item Исследовать возможность возникновения предельного цикла. В положительном случае найти соответствующее первое ляпуновское число. Исследовать характер предельного цикла (устойчивый, неустойчивый, полуустойчивый).
+    \item Дать биологическую интерпретацию полученным результатам.
+\end{enumerate}
+\section{Биологическая интерпретация}
+
+\end{document}
